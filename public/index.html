@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="utils.css">
+</head>
+
+<body>
+    <div class="limiter">
+        <div class="container-login">
+            <div class="wrap-login">
+                <form class="login-form validate-form flex-sb flex-w" method="POST" url="/login" id="login-form">
+                    <span class="login-form-title pb-54">
+                        Login
+                    </span>
+
+                    <div class="wrap-input validate-input">
+                        <input class="input" type="text" name="username" autocomplete="off">
+                        <span class="focus-input" data-placeholder="Username"></span>
+                    </div>
+
+                    <div class="wrap-input validate-input">
+                        <input class="input" type="password" name="password" autocomplete="off">
+                        <span class="focus-input" data-placeholder="Password"></span>
+                    </div>
+
+                    <div class="container-login-form-btn mt-16">
+                        <button class="login-form-btn" id="login-form-btn">
+                            Sign In
+                        </button>
+                    </div>
+                    <div class="wrap-message hidden mt-32" id="message">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Form design inspired by https://colorlib.com/etc/lf/Login_v5/index.html -->
+    <script src="main.js"></script>
+</body>
+
+</html>
